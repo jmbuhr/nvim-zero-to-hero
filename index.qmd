@@ -1,0 +1,21 @@
+# Zero to Hero in Neovim
+
+## Installation
+
+<https://github.com/neovim/neovim>
+
+## Example File
+
+## Configuration
+
+<https://github.com/jmbuhr/quarto-nvim-kickstarter>
+
+
+```{lua}
+local x = 1
+local y = x + 1
+print(y)
+```
+
+
+
