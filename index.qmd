@@ -17,5 +17,165 @@ local y = x + 1
 print(y)
 ```
 
+# Old Notes
+
+# Setup
+
+Download the [kickstarter configuration](https://github.com/jmbuhr/quarto-nvim-kickstarter)!
+
+```bash
+git clone https://github.com/jmbuhr/quarto-nvim-kickstarter.git ~/.config/nvim
+```
+
+open Neovim with `nvim` and let it automatically install plugins.
+
+And optionally also for [tmux](https://github.com/jmbuhr/tmux-kickstarter)
+
+```bash
+cd ~
+wget https://raw.githubusercontent.com/jmbuhr/tmux-kickstarter/main/.tmux.conf
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+```
+
+followed by `tmux` and `ctrl + space` followed by `I`.
+
+Update
+
+```bash
+cd ~/.config/nvim
+git pull
+```
+
+## Other tweaks
+
+::: {.aside}
+[![](img/2023-03-20-10-04-38.png)](./img/2023-03-20-10-04-38.png)
+:::
+
+
+# Welcome to (Neo)Vim
+
+## Modes
+
+- `<esc>`
+- `i`
+- `v`
+- `<c-v>`
+
+## Movement and Operators
+
+Vim is a language
+
+- `:`
+
+- `jk`
+- `hl`
+- `wW` and `bB`
+- `ft` and `FT` and `;`
+- `/?` and `nN`
+- `0$`
+
+- `aA`
+- `iI`
+- `oO`
+- `y`
+- `d`
+- `x`
+- `p`
+- `c`
+
+- `v`
+- `vi` (`ip`, `is`)
+- `va` 
+
+- `u`
+
+
+- `.`
+- `m`
+
+- `<leader>` (`<space>`)
+
+
+
+Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.
+
+Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet.
+Nisi anim cupidatat excepteur officia.
+Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident.
+Nostrud officia pariatur ut officia
+Sit irure elit esse ea nulla sunt ex occaecat reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et culpa duis.
+
+
+```{python}
+def hello_world():
+  '''Hello world is a very important function.
+
+  It is also very well documented.
+  '''
+  print("Hello world")
+
+
+def fancy_add(x: float, y: float) -> float:
+  '''Add two numbers verbously.
+
+  It is also very well documented.
+  '''
+  print(f"Adding {x} and {y}")
+  return x + y
+```
+
+
+```{python}
+hello_world()
+fancy_add(10, 'cat')
+```
+
+## Quarto
+
+- `<leader>q`
+- preview
+
+
+# Activate more capabilities
+
+A short tour of the config
+
+- activate code features for bash chunks
+
+# The best of both worlds: Interactivity and Reproducibility
+
+- `<leader>cn`
+- `<c-j>`
+- `<c-w>L`
+
+`:TSInstall bash`
+
+```{bash}
+ls
+var=1
+```
+
+```{bash} 
+echo $var
+```
+
+- `K`
+- `gd`
+
+- quarto export
+- install `shfmt`
+- format exported script
+
+# Further reading (or viewing)
+
+- [on the official quarto site](https://quarto.org/docs/get-started/hello/neovim.html)
+- [behind the scenes 🦦](https://github.com/jmbuhr/otter.nvim)
+- [further customization](https://github.com/jmbuhr/.dotfiles/tree/main/nvim/.config) e.g. for gromacs filetypes and the marksman language server
+- [fonts with icons for your terminal](https://www.nerdfonts.com/)
+- [vim keybindings in your browser](https://github.com/philc/vimium)
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLabWm-zCaD1axcMGvf7wFxJz8FZmyHSJ7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
