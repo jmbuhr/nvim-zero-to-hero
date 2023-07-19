@@ -1,5 +1,7 @@
 # Zero to Hero in Neovim
 
+{{< qrcode https://github.com/jmbuhr/nvim-zero-to-hero >}}
+
 ## Structure
 
 - first: general tips and tricks you can use in any vim
