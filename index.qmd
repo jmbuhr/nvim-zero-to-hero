@@ -46,6 +46,10 @@ In `files/`
 - `example.mdp`
 - `template.mdp`
 
+## Tip
+
+remap capslock to escape!
+
 ## Modes
 
 - `<esc>`
