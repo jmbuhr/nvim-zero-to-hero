@@ -1,25 +1,31 @@
 # Zero to Hero in Neovim
 
+## Structure
+
+- first: general tips and tricks you can use in any vim
+- second: configuring neovim and learning lua
+- third: write a small "plugin" in lua to play a sound
+
 ## Installation
 
 <https://github.com/neovim/neovim>
 
-## Example File
+- Go to: <https://github.com/neovim/neovim/releases/tag/stable>
+- download latest release for your system
+  - On windows, I recommend WSL2 and then continue like on linux, then you have a nice terminal as well (otherwise its also fine to use the msi)
+  - for linux, I recommend the appimage nvim.appimage
+  - download it to somewhere on your path and make it executable, e.g.
 
-## Configuration
-
-<https://github.com/jmbuhr/quarto-nvim-kickstarter>
-
-
-```{lua}
-local x = 1
-local y = x + 1
-print(y)
+```bash
+sudo wget https://github.com/neovim/neovim/releases/download/stable/nvim.appimage -O /usr/bin/nvim && sudo chmod +x /usr/bin/nvim
 ```
 
-# Old Notes
+- execute with nvim
+- if you are on ubuntu and the appimage doesn't start, run `sudo apt install libfuse2`
 
-# Setup
+## Setup, Configuration
+
+<https://github.com/jmbuhr/quarto-nvim-kickstarter>
 
 Download the [kickstarter configuration](https://github.com/jmbuhr/quarto-nvim-kickstarter)!
 
@@ -29,31 +35,16 @@ git clone https://github.com/jmbuhr/quarto-nvim-kickstarter.git ~/.config/nvim
 
 open Neovim with `nvim` and let it automatically install plugins.
 
-And optionally also for [tmux](https://github.com/jmbuhr/tmux-kickstarter)
+## Example Files
 
 ```bash
-cd ~
-wget https://raw.githubusercontent.com/jmbuhr/tmux-kickstarter/main/.tmux.conf
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+git clone https://github.com/jmbuhr/nvim-zero-to-hero.git
 ```
 
-followed by `tmux` and `ctrl + space` followed by `I`.
+In `files/`
 
-Update
-
-```bash
-cd ~/.config/nvim
-git pull
-```
-
-## Other tweaks
-
-::: {.aside}
-[![](img/2023-03-20-10-04-38.png)](./img/2023-03-20-10-04-38.png)
-:::
-
-
-# Welcome to (Neo)Vim
+- `example.mdp`
+- `template.mdp`
 
 ## Modes
 
@@ -90,82 +81,14 @@ Vim is a language
 
 - `u`
 
-
 - `.`
 - `m`
 
-- `<leader>` (`<space>`)
 
+## Our own Lua Neovim Plugin Example
 
+<https://en.wikipedia.org/wiki/Kookaburra>
 
-Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.
-
-Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet.
-Nisi anim cupidatat excepteur officia.
-Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident.
-Nostrud officia pariatur ut officia
-Sit irure elit esse ea nulla sunt ex occaecat reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et culpa duis.
-
-
-```{python}
-def hello_world():
-  '''Hello world is a very important function.
-
-  It is also very well documented.
-  '''
-  print("Hello world")
-
-
-def fancy_add(x: float, y: float) -> float:
-  '''Add two numbers verbously.
-
-  It is also very well documented.
-  '''
-  print(f"Adding {x} and {y}")
-  return x + y
-```
-
-
-```{python}
-hello_world()
-fancy_add(10, 'cat')
-```
-
-## Quarto
-
-- `<leader>q`
-- preview
-
-
-# Activate more capabilities
-
-A short tour of the config
-
-- activate code features for bash chunks
-
-# The best of both worlds: Interactivity and Reproducibility
-
-- `<leader>cn`
-- `<c-j>`
-- `<c-w>L`
-
-`:TSInstall bash`
-
-```{bash}
-ls
-var=1
-```
-
-```{bash} 
-echo $var
-```
-
-- `K`
-- `gd`
-
-- quarto export
-- install `shfmt`
-- format exported script
 
 # Further reading (or viewing)
 
@@ -177,5 +100,17 @@ echo $var
 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLabWm-zCaD1axcMGvf7wFxJz8FZmyHSJ7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+And optionally also for [tmux](https://github.com/jmbuhr/tmux-kickstarter)
+
+```bash
+cd ~
+wget https://raw.githubusercontent.com/jmbuhr/tmux-kickstarter/main/.tmux.conf
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+```
+
+followed by `tmux` and `ctrl + space` followed by `I`.
+
+
 
 
